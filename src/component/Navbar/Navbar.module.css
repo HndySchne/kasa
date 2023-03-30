@@ -1,0 +1,17 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ulNavigation {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 15px;
+    padding-left: 15px; 
+}
