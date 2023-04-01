@@ -1,33 +1,20 @@
-.aboutContainer{
+.aboutContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.collapses{
+/* image du fond d'écran de la page à propos  */
+.aboutContainer img {
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.collapses {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
-
-.collapse {
-    background-color: #FF6060;
-    border-radius: 10px;
-    width: 600px;
-    border: solid;
-}
-
-.textHidden{
-    visibility: hidden;
-    position: absolute;
-}
-
-.textNotHidden{
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-

@@ -1,4 +1,4 @@
-export const collapseData = [
+export const dataAbout = [
     {
         name: "Fiable",
         id:"3k5",

@@ -1,4 +1,4 @@
-import styles from "./DetailPage.module.css";
+import styles from "./Carousel.module.css";
 import { useState } from "react";
 
 function Carousel(pictures) {

@@ -1,0 +1,73 @@
+.collapses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    border-radius: 5px;
+    height: 47px;
+    width: 600px;
+    color: #F6F6F6;
+}
+
+.textHidden {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* texte non caché après avoir revalorisé la classe du paragraphe grace au Usestate  */
+.textNotHidden {
+    margin-top: 0px;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 600px;
+    background-color: #F6F6F6;
+    font-size: 18px;
+}
+
+/* premier span est décalé dans le cas d'une liste  */
+.textNotHidden span:first-child {
+    padding-top: 15px;
+}
+
+.textNotHidden span {
+    padding-left: 15px;
+    color: #FF6060;
+}
+
+.textNotHidden p {
+    padding-left: 15px;
+    color: #FF6060;
+}
+
+/* titres et flèches des collapses (qui s'ouvrent et se ferment) */
+span {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.arrowUp {
+    animation: rotate-i 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/*Keyframe de la rotation de la flèche */
+@keyframes rotate-i {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}

@@ -1,3 +1,17 @@
+.HomePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageTitle p{
+    position: absolute;
+    top: 160px; left: 600px;
+    color: #F6F6F6; 
+    font-size: 30px;
+}
+
 .cards{
     display: flex;
     flex-direction: row;
@@ -6,7 +20,6 @@
     background-color: #F6F6F6;
     border-radius: 15px;
     margin: 15px; 
-    border: solid greenyellow;
 }
 
 .Card{ 

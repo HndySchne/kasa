@@ -1,0 +1,50 @@
+/* Pour séparer les éléments collapses en flex  */
+.collapsesMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Continent le titre et les informations de l'hôte */
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* contient le titre et le sous-titre (localisation) */
+.titleContainer {
+
+}
+
+/* Les tags utilisés pour retrouver l'appartement  */
+.tagsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Les informations de l'Hôte  */
+.hostContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hostInformation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hostContainer img {
+    border-radius: 50%;
+}
+
+
+.starSolid{
+    color:#FF6060;
+}
+
+.starEmpty{
+    color:#E3E3E3;
+}

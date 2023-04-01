@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div>
+    <div className={styles.HomePage}>
+      <div className={styles.imageTitle}>
       <img src={picture} alt="description de la page d'accueil " />
+      <p>Chez vous, partout et ailleurs</p>
+      </div>
       <div className={styles.cards}>
         {dataJson.map((data) => (
           <Link to={"/detail/" + data.id} className={styles.link} key={data.id}>
