@@ -1,14 +1,14 @@
 .Carousel {
-    border: solid;
+    height: 300px;
     width: 100%;
-    height: 200px;
 }
 
 .Carousel img {
     object-fit: cover;
     position: absolute;
-    width: 100%;
-    height: 200px;
+    max-width: 1600px;
+    width: 97%;
+    height: 300px;
     border: solid;
 }
 
@@ -18,4 +18,20 @@
 
 .notVisible {
     opacity: 0;
+}
+
+.nextChevron {
+    font-size: 100px;
+    position: absolute;
+    top: 200px;
+    left: 90%;
+    color: #FFFFFF;
+}
+
+.previousChevron{
+    font-size: 100px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: #FFFFFF;
 }

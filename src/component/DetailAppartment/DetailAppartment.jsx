@@ -33,7 +33,15 @@ function DetailPage() {
           </div>
           <div>
             {range.map((range) =>
-              indexJson.rating >= range ? <span className={styles.starSolid}><i class="fa-solid fa-star"></i></span> : <span className={styles.starEmpty}><i class="fa-solid fa-star"></i></span>
+              indexJson.rating >= range ? (
+                <span className={styles.starSolid}>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              ) : (
+                <span className={styles.starEmpty}>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              )
             )}
           </div>
         </div>

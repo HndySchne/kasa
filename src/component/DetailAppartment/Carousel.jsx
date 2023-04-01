@@ -38,8 +38,12 @@ function Carousel(pictures) {
           />
         ))}
       </div>
-      <button onClick={next}>next</button>
-      <button onClick={previous}>previous</button>
+      <div className={styles.nextChevron} onClick={next}>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div className={styles.previousChevron} onClick={previous}>
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
     </div>
   );
 }

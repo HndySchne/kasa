@@ -14,13 +14,26 @@
 
 /* contient le titre et le sous-titre (localisation) */
 .titleContainer {
-
+    padding-top: 0px;
+    margin-top: 0px;
+    color:#FF6060;
 }
 
 /* Les tags utilisés pour retrouver l'appartement  */
 .tagsContainer {
     display: flex;
-    justify-content: space-between;
+}
+
+.tagsContainer p {
+    background-color: #FF6060;
+    color: #F6F6F6;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    border-radius: 15px;
+    margin-right: 15px;
 }
 
 /* Les informations de l'Hôte  */
@@ -34,12 +47,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 15px;
 }
 
 .hostContainer img {
     border-radius: 50%;
+    width: 100px;
+    padding-left: 15px;
 }
-
 
 .starSolid{
     color:#FF6060;
@@ -47,4 +62,15 @@
 
 .starEmpty{
     color:#E3E3E3;
+}
+
+h1{
+    font-weight: normal;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h1 + p {
+    padding-top: 0px;
+    margin-top: 0px;
 }
