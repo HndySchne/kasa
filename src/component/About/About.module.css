@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.imageTitle img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    filter: brightness(0.7);
+    -webkit-filter: brightness(0.7);
+}
+
 /* image du fond d'écran de la page à propos  */
 .aboutContainer img {
     object-fit: cover;
@@ -14,7 +22,7 @@
 .collapses {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     margin-bottom: 5px;
+    width: 75%;
 }

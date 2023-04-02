@@ -1,0 +1,24 @@
+.mainError {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF6060;
+}
+
+.mainError h1 {
+    font-size: 288px;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+.mainError p {
+    font-size: 36px;
+}
+
+.mainError a {
+    padding-top: 150px;
+    font-size: 18px;
+    color: #FF6060;
+}

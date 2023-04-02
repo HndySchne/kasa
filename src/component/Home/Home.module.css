@@ -4,12 +4,23 @@
     justify-content: center;
     align-items: center;
 }
+.imageTitle{
+    width: 80%;
+}
+
+.imageTitle img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
 
 .imageTitle p{
     position: absolute;
-    top: 160px; left: 600px;
+    top: 15%; left: 28%;
     color: #F6F6F6; 
-    font-size: 30px;
+    font-size: 48px;
 }
 
 .cards{
@@ -32,6 +43,10 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s ease-in-out;
     border-radius: 15px;
+ } 
+
+ .Card p{
+    font-size: 20px;
  } 
 
 .imgCard{

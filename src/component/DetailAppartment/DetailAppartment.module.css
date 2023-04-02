@@ -2,14 +2,18 @@
 .collapsesMain {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+}
+/* Pour séparer les éléments collapses en flex  */
+.collapses {
+    width: 50%;
+    padding-right: 15px;
 }
 
 /* Continent le titre et les informations de l'hôte */
 .mainContainer {
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
 }
 
 /* contient le titre et le sous-titre (localisation) */
@@ -49,19 +53,33 @@
     justify-content: center;
     padding-bottom: 15px;
 }
+.hostInformation > p{
+    padding-right: 10px;
+}
 
 .hostContainer img {
-    border-radius: 50%;
-    width: 100px;
-    padding-left: 15px;
+    border-radius: 100%;
+}
+
+.stars{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .starSolid{
     color:#FF6060;
+    font-size: 18px;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .starEmpty{
     color:#E3E3E3;
+    font-size: 18px;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 h1{

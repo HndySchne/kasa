@@ -15,3 +15,13 @@ nav li {
     margin-right: 15px;
     padding-left: 15px; 
 }
+
+nav li a {
+    color:#FF6060;
+    text-decoration:none;
+}
+
+nav li a:focus {
+    color:#FF6060;
+    text-decoration:underline;
+}

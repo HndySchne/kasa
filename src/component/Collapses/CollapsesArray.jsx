@@ -16,7 +16,7 @@ function CollapsesArray({ description, name }) {
   const arrowDirection = isOpen ? styles.arrowUp : "";
 
   return (
-    <div className={styles.collapses}>
+    <div className={styles.collapseContainer}>
       <div className={styles.collapse} onClick={ShowContent}>
         <span>{name}</span>
         <span className={arrowDirection}>

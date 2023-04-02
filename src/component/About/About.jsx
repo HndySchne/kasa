@@ -7,7 +7,7 @@ function About() {
 
   return (
     <div className={styles.aboutContainer}>
-      <div>
+      <div className={styles.imageTitle}>
         <img src={pictureAbout} alt="Fond d'écran d'un paysage relaxant" />
       </div>
       <div className={styles.collapses}>

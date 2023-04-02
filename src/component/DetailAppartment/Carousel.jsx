@@ -39,10 +39,10 @@ function Carousel(pictures) {
         ))}
       </div>
       <div className={styles.nextChevron} onClick={next}>
-        <i class="fa-solid fa-chevron-right"></i>
+        <i className="fa-solid fa-chevron-right"></i>
       </div>
       <div className={styles.previousChevron} onClick={previous}>
-        <i class="fa-solid fa-chevron-left"></i>
+        <i className="fa-solid fa-chevron-left"></i>
       </div>
     </div>
   );

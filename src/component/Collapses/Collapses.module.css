@@ -1,8 +1,4 @@
-.collapses {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.collapseContainer {
     margin-bottom: 5px;
 }
 
@@ -13,8 +9,8 @@
     background-color: #FF6060;
     border-radius: 5px;
     height: 47px;
-    width: 600px;
     color: #F6F6F6;
+    width: 100%;
 }
 
 .textHidden {
@@ -30,7 +26,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 600px;
+    width: 100%;
     background-color: #F6F6F6;
     font-size: 18px;
 }

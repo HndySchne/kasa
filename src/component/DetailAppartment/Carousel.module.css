@@ -9,7 +9,7 @@
     max-width: 1600px;
     width: 97%;
     height: 300px;
-    border: solid;
+    border-radius: 15px;
 }
 
 .visible {
