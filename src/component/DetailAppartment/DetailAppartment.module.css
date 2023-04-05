@@ -1,8 +1,13 @@
+main {
+    padding-left: 15px;
+}
+
 /* Pour séparer les éléments collapses en flex  */
 .collapsesMain {
     display: flex;
     flex-direction: row;
 }
+
 /* Pour séparer les éléments collapses en flex  */
 .collapses {
     width: 50%;
@@ -20,7 +25,7 @@
 .titleContainer {
     padding-top: 0px;
     margin-top: 0px;
-    color:#FF6060;
+    color: #FF6060;
 }
 
 /* Les tags utilisés pour retrouver l'appartement  */
@@ -47,48 +52,95 @@
     align-items: center;
 }
 
-.hostInformation{
+.hostInformation {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 15px;
+    color: #FF6060;
 }
-.hostInformation > p{
+
+.hostInformation>p {
     padding-right: 10px;
 }
 
 .hostContainer img {
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
-.stars{
+.stars {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
 }
 
-.starSolid{
-    color:#FF6060;
+.starSolid {
+    color: #FF6060;
     font-size: 18px;
     padding-right: 0px;
     margin-right: 0px;
 }
 
-.starEmpty{
-    color:#E3E3E3;
+.starEmpty {
+    color: #E3E3E3;
     font-size: 18px;
     padding-right: 0px;
     margin-right: 0px;
 }
 
-h1{
+h2 {
     font-weight: normal;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
 
-h1 + p {
+h2+p {
     padding-top: 0px;
     margin-top: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Pour séparer les éléments collapses en flex  */
+    .collapsesMain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Continent le titre et les informations de l'hôte */
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+    }
+
+    /* Les informations de l'Hôte  */
+    .hostContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .collapses {
+        width: 97%;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
+    h2+p {
+        font-size: 18px;
+    }
+
+    .hostContainer img {
+        width: 50%;
+    }
+
+    .tagsContainer p {
+        font-size: 12px;
+    }
 }

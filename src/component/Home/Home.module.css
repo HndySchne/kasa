@@ -1,65 +1,77 @@
-.HomePage{
+.HomePage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.imageTitle{
-    width: 80%;
+
+.imageTitle {
+    width: 97%;
 }
 
-.imageTitle img{
+.imageTitle img {
     width: 100%;
     height: 200px;
     border-radius: 15px;
-    filter: brightness(0.5);
     -webkit-filter: brightness(0.5);
 }
 
-.imageTitle p{
+.imageTitle h1 {
     position: absolute;
-    top: 15%; left: 28%;
-    color: #F6F6F6; 
-    font-size: 48px;
+    top: 130px;
+    left: 21%;
+    color: #F6F6F6;
+    text-align: center;
+    font-weight: 500;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #F6F6F6;
     border-radius: 15px;
-    margin: 15px; 
+    margin: 15px;
 }
 
-.Card{ 
-    margin: 20px;  
+.Card {
+    margin: 20px;
     padding: 20px;
     width: 300px;
     height: 300px;
-    background-color: #FF6060; 
-    color: #F6F6F6; 
+    background-color: #FF6060;
+    color: #F6F6F6;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s ease-in-out;
     border-radius: 15px;
- } 
+}
 
- .Card p{
+.Card p {
     font-size: 20px;
- } 
+}
 
-.imgCard{
+.imgCard {
     object-fit: cover;
     height: 200px;
     width: 100%;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: #F6F6F6;
 }
 
-.link:hover .Card{
+.link:hover .Card {
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .imageTitle h1{
+        top: 150px;
+        left: 8%;
+        font-size: 24px;
+    }
 }

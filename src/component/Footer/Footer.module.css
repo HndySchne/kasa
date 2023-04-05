@@ -3,10 +3,18 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
-    margin-top: 50px;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 footer p {
     color: white; 
+}
+
+@media screen and (max-width: 768px) {
+ 
+    footer p {
+        font-size: 15px;
+        width: 250px;
+    }
 }

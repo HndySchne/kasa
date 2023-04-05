@@ -11,7 +11,7 @@ function DetailPage() {
   const { id } = useParams();
   const indexJson = dataJson.find((Index) => Index.id === id);
 
-  // si l'id n'est pas trouvé alors on renvoie vers la page d'acceuil
+  // si l'id n'est pas trouvé alors on renvoie vers la page d'erreurs
   if (indexJson == null) {
     return <Error />;
   }
@@ -20,33 +20,38 @@ function DetailPage() {
   const range = [1, 2, 3, 4, 5];
 
   return (
-    <div>
+    <main>
+      {/* appel du JSX carousel qui permet de scroller les images  */}
       <div>
         <Carousel pictures={indexJson.pictures} />
       </div>
+      {/* Titre leix et tags du logment */}
       <div className={styles.mainContainer}>
         <div className={styles.titleContainer}>
-          <h1>{indexJson.title}</h1>
+          <h2>{indexJson.title}</h2>
           <p>{indexJson.location}</p>
           <div className={styles.tagsContainer}>
             {arrayTags.map((tags) => (
-              <p>{tags}</p>
+              <p key={tags}>{tags}</p>
             ))}
           </div>
         </div>
+        {/* Nom prénoms et nombre d'étoiles de l'hôte  */}
         <div className={styles.hostContainer}>
           <div className={styles.hostInformation}>
             <p>{indexJson.host.name}</p>
             <img src={indexJson.host.picture} alt="" />
           </div>
           <div className={styles.stars}>
+            {/* Dans le cas où on a le nombre provenant du fichier Json > = au nombre de la constante  */}
+            {/* On met une étoile pleine, sinon on mets une étoile vide  */}
             {range.map((range) =>
               indexJson.rating >= range ? (
-                <span className={styles.starSolid}>
+                <span key={range} className={styles.starSolid}>
                   <i className="fa-solid fa-star"></i>
                 </span>
               ) : (
-                <span className={styles.starEmpty}>
+                <span key={range} className={styles.starEmpty}>
                   <i className="fa-solid fa-star"></i>
                 </span>
               )
@@ -54,10 +59,12 @@ function DetailPage() {
           </div>
         </div>
       </div>
+      {/* On appelle le fichier JSX Collapses avec en entrée une description string et le nom */}
       <div className={styles.collapsesMain}>
         <div className={styles.collapses}>
           <Collapses description={indexJson.description} name="Desciption" />
         </div>
+        {/* On appelle le fichier JSX CollapsesArray avec en entrée une description Array et le nom */}
         <div className={styles.collapses}>
           <CollapsesArray
             description={indexJson.equipments}
@@ -65,7 +72,7 @@ function DetailPage() {
           />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

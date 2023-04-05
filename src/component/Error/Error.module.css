@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;
     color: #FF6060;
+    height: 100%;
 }
 
-.mainError h1 {
+.mainError h2 {
     font-size: 288px;
     font-weight: 700;
     padding-top: 20px;
@@ -21,4 +22,24 @@
     padding-top: 150px;
     font-size: 18px;
     color: #FF6060;
+}
+
+
+/* Media queries  */
+@media screen and (max-width: 768px) {
+ 
+    .mainError h2 {
+        font-size: 98px;
+        margin-bottom: 0px;
+    }
+
+    .mainError p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .mainError a {
+        font-size: 12px;
+     
+    }
 }

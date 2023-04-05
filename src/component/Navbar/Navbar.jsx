@@ -5,13 +5,13 @@ import styles from "./Navbar.module.css";
 function Navbar() {
   return (
     <div className={styles.navBar}>
-      <div>
+      <header>
         <img src={LogoNav} alt="Logo du Header" />
-      </div>
+      </header>
       <nav>
         <ul className={styles.ulNavigation}>
           <li>
-            <Link to="/"> Acceuil </Link>
+            <Link to="/"> Accueil </Link>
           </li>
           <li>
             <Link to="/about"> A Propos </Link>

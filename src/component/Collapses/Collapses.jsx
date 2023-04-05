@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function Collapses({ description, name }) {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   // fonction qui permet de changer le statut du top
   const ShowContent = () => {
     setIsOpen(!isOpen);

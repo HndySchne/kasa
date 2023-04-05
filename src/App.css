@@ -6,12 +6,24 @@
     url('./font/Montserrat-Bold.ttf') format('truetype');
 }
 
-body {
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+.appJsBody{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 1600px;
-  margin: 20px;
+  /* font-family: 'Montserrat'; */
+  justify-content: space-between;
+  /* font-size: 24px; */
+
+}
+
+body {
+  /* display: flex;
+  flex-direction: column; */
   font-family: 'Montserrat';
-  font-size: 24px;
+  /* justify-content: space-between; */
+  font-size: 24px; 
 }

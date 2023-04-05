@@ -6,8 +6,7 @@
 .Carousel img {
     object-fit: cover;
     position: absolute;
-    max-width: 1600px;
-    width: 97%;
+    width: 98%;
     height: 300px;
     border-radius: 15px;
 }
@@ -34,4 +33,21 @@
     top: 200px;
     left: 50px;
     color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Carousel img {
+        width: 93%;
+    }
+    
+    .nextChevron {
+        left: 80%;
+    }
+
+    .previousChevron{
+        left: 25px;
+    }
+
 }

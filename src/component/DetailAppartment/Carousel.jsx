@@ -6,7 +6,6 @@ function Carousel(pictures) {
 
   const pictureArray = pictures.pictures;
   const getClassName = (i) => {
-    console.log(i, "et : ", pictureActual);
     if (pictureActual === i) return styles.visible;
     return styles.notVisible;
   };

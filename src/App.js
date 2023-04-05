@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './component/Home/Home';
 import Error from './component/Error/Error';
@@ -9,7 +9,7 @@ import DetailAppartment from './component/DetailAppartment/DetailAppartment';
 
 function App() {
   return (
-    <div>
+    <div className={styles.appJsBody}>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />

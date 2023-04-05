@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 15px;
 }
 
 .ulNavigation {
@@ -13,15 +14,39 @@
 
 nav li {
     margin-right: 15px;
-    padding-left: 15px; 
+    padding-left: 15px;
 }
 
 nav li a {
-    color:#FF6060;
-    text-decoration:none;
+    color: #FF6060;
+    text-decoration: none;
 }
 
 nav li a:focus {
-    color:#FF6060;
-    text-decoration:underline;
+    color: #FF6060;
+    text-decoration: underline;
+}
+
+/* Resposnsive mobility  */
+@media screen and (max-width: 768px) {
+    img {
+        width: 125px;
+        padding-right: 0px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .ulNavigation {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    nav li a {
+        font-size: 15px;
+    }
+
 }

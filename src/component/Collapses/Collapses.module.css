@@ -29,6 +29,7 @@
     width: 100%;
     background-color: #F6F6F6;
     font-size: 18px;
+    color: #FF6060;
 }
 
 /* premier span est décalé dans le cas d'une liste  */
@@ -36,14 +37,17 @@
     padding-top: 15px;
 }
 
+.textNotHidden span:last-child {
+    padding-bottom: 20px;
+}
+
 .textNotHidden span {
     padding-left: 15px;
-    color: #FF6060;
+
 }
 
 .textNotHidden p {
     padding-left: 15px;
-    color: #FF6060;
 }
 
 /* titres et flèches des collapses (qui s'ouvrent et se ferment) */
