@@ -37,6 +37,8 @@ function Carousel(pictures) {
           />
         ))}
       </div>
+      {/* Picture actual => index (commence à 0) / total : le nombre de photos */}
+      <p className={styles.numberPictures}>{pictureActual + 1} / {pictureArray.length}</p>
       <div className={styles.nextChevron} onClick={next}>
         <i className="fa-solid fa-chevron-right"></i>
       </div>
